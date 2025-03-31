@@ -79,12 +79,12 @@ main {
     .input-box:has(input:focus) {
         outline: 2px solid var(--topaz);
      }
-
+    
      .tip {
         div {
             margin-top: 1.6rem;
             display: grid;
-            grid-template-columns: repeat(2, 1 fr);
+            grid-template-columns: repeat(2, 1fr); /*a merda do fr estava com espaço nessa bomba*/
             gap: 1.6rem;
 
             button{
