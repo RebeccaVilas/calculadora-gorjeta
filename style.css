@@ -18,6 +18,7 @@
     --topaz: #26C2AE;
     --beetle-green: #547878;
     --regent-grey: #7F9D9F;
+    --water-leaf: #9FE8DF;
 }
 
 body {
@@ -45,8 +46,7 @@ main {
         margin-bottom: 3.2rem;
     }
 
-
-   strong {
+    strong {
         color: var(--greyish-turquoise);
         display: block;
         margin-bottom: .6rem;
@@ -59,7 +59,6 @@ main {
         align-items: center;
         border-radius: .5rem;
     
-    
     input {
         border: none;
         background: transparent;
@@ -70,8 +69,7 @@ main {
         font-weight: 700;
         color: var(--sherpa-blue);
     
-    
-        &::placeholder{
+     &::placeholder{
             color: var(--sherpa-blue);
             opacity: 0.35;
         }
@@ -120,8 +118,7 @@ main {
             }
         }
      }
-
-}
+ }
 
 .results {
     background: var(--sherpa-blue);
@@ -163,6 +160,59 @@ main {
         padding-block: .9rem;
     }
 }
+
+@media(min-width: 920px) {
+    main {
+        display: flex;
+        max-width: 92rem;
+        margin-inline: auto;
+        border-radius: 2.5rem;
+        gap: 4.8rem;
+        padding: 4.8rem;
+    }
+    section {
+        width: 100%;
+    }
+
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        display: none;
+    }
+
+    .info{
+        .tip {
+            div{
+            grid-template-columns: repeat(3, 1fr);
+
+            input::hover{
+                background: var(--topaz);
+                cursor: pointer;
+                transition: .5s;
+            }
+            }
+        }
+    }
+    .results{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5.6rem 4rem 4rem;
+    
+        .amout,
+        .total {
+            strong{
+            font-size: 4.8rem;
+            }
+        }
+
+        button:hover {
+            background: var(--water-leaf);
+            cursor: pointer;
+            transition: .5s;
+        }
+    }
+}
+
 
 
 
