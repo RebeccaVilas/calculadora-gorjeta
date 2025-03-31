@@ -17,6 +17,7 @@
     --sherpa-blue:#00474B;
     --topaz: #26C2AE;
     --beetle-green: #547878;
+    --regent-grey: #7F9D9F;
 }
 
 body {
@@ -35,9 +36,7 @@ header {
 main {
     background: var(--white);
     padding: 3.2rem 2.4rem;
-    border-radius: 2.5rem 2.5rem 0 0;
-    max-width: 92rem;
-    
+    border-radius: 2.5rem 2.5rem 0 0; 
 }
 
 .info{
@@ -123,5 +122,47 @@ main {
      }
 
 }
+
+.results {
+    background: var(--sherpa-blue);
+    border-radius: 1.5rem;
+    padding: 4rem 2.4rem 2.4rem;
+
+    .amount,
+    .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.5rem;
+
+        p {
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.3rem;
+
+            span {
+                color: var(--regent-grey);
+            }
+        }
+
+        strong {
+            color: var(--topaz);
+            font-size: 3.2rem;
+        }
+    }
+
+      button {
+        background: var(--topaz);
+        color: var(--sherpa-blue);
+        font-size: 2rem;
+        text-transform: uppercase;
+        width: 100%;
+        border: none;
+        border-radius: .5rem;
+        font-weight: 700;
+        padding-block: .9rem;
+    }
+}
+
 
 
