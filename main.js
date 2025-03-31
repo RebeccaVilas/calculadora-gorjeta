@@ -62,3 +62,7 @@ function receiveCostumTipPercentage(){
         console.log("Ainda não dá! Preencha tudo!")
     }
 }
+
+function reset (){
+    
+}
